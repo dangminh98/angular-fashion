@@ -1,0 +1,169 @@
+.main-website {
+  width: 1750px;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+
+.main-content {
+  width: 1260px;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+
+.items {
+  width: 100%;
+  height: 100%; }
+
+.item-image {
+  position: relative;
+  border: 1px solid lightgrey;
+  display: flex;
+  height: 500px; }
+  .item-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; }
+  .item-image .showDetail {
+    align-self: center;
+    width: 0;
+    box-sizing: border-box;
+    padding: 10px 0;
+    transition: all .2s linear;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    align-content: center; }
+    .item-image .showDetail .wrapper-show {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      border: 1px solid black;
+      transition: all .2s linear;
+      cursor: pointer; }
+      .item-image .showDetail .wrapper-show a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        place-self: center;
+        transition: all .2s linear; }
+    .item-image .showDetail .wrapper-show:hover {
+      background-color: #000000;
+      transition: all .2s linear; }
+      .item-image .showDetail .wrapper-show:hover a {
+        color: #ffffff;
+        transition: all .2s linear; }
+
+.item-image:hover .showDetail {
+  width: 100%;
+  transition: all .2s linear;
+  opacity: 1; }
+
+.detail {
+  text-align: center; }
+  .detail a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 44px;
+    font-family: 'IBM Plex Mono', monospace; }
+  .detail p, .detail label {
+    font-family: 'IBM Plex Mono', monospace; }
+
+.main-title {
+  width: 1750px;
+  height: 100px;
+  margin: 0 auto 50px auto;
+  display: block;
+  background: #f4f4f4 !important;
+  padding: 20px;
+  box-sizing: border-box; }
+  .main-title h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+.log-title {
+  font-size: 28px;
+  margin-bottom: 32px; }
+
+.title-form {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 50px; }
+  .title-form p {
+    color: #000000; }
+  .title-form form {
+    width: 100%;
+    height: auto;
+    margin: 20px 0; }
+    .title-form form input {
+      width: 100%;
+      height: 30px;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid lightgrey;
+      outline: none;
+      margin: 20px 0;
+      font-size: 14px; }
+    .title-form form button {
+      width: 65px;
+      height: 30px;
+      background: #ffffff;
+      border: 1px solid black;
+      color: black;
+      transition: .5s linear; }
+    .title-form form button:hover {
+      transition: .5s linear;
+      background: #000000;
+      color: #ffffff; }
+
+.slide-banner {
+  width: 1750px;
+  height: 650px;
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  z-index: 0; }
+  .slide-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0; }
+  .slide-banner .slider-title {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .slide-banner .slider-title p {
+      color: #ffffff;
+      font-size: 18px;
+      letter-spacing: 2px; }
+  .slide-banner .prev, .slide-banner .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+  .slide-banner .next {
+    right: 0%; }
+  .slide-banner .prev:hover, .slide-banner .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+/*# sourceMappingURL=common-style.css.map */

@@ -1,0 +1,22 @@
+<div class="main-title">
+  <h1> Add Product </h1>
+  <p> Home / Add Product </p>
+</div>
+
+<div class="main-content">
+  <div class="log-title">Add Product</div>
+  <div class="title-form">
+    <form>
+      <p>Product name</p>
+      <input type="text" name="name" [(ngModel)]="product.name">
+
+      <p>Price</p>
+      <input type="text" name="price" [(ngModel)]="product.price">
+
+      <p>Description</p>
+      <textarea name="description" [(ngModel)]="product.description"></textarea>
+
+      <button type="submit" (click)="addProduct()"> Add </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,232 @@
+// main website
+.main-website{
+  width: 1750px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-content{
+  width: 1260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+// end main website
+
+
+// common items
+.items{
+  width: 100%;
+  height: 100%;
+}
+
+.item-image{
+   position: relative;
+   border: 1px solid lightgrey;
+   display: flex;
+   height: 500px;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+   .showDetail{
+     align-self: center;
+     width: 0;
+     box-sizing: border-box;
+     padding: 10px 0;
+     transition: all .2s linear;
+     display: flex;
+     justify-content: space-around;
+     opacity: 0;
+     z-index: 10;
+     background: rgba(255,255,255,.7);
+     align-content: center;
+     .wrapper-show{
+       width: 45px;
+       height: 45px;
+       display: grid;
+       border: 1px solid black;
+       transition: all .2s linear;
+       cursor: pointer;
+       a{
+         color: black;
+         font-size: 18px;
+         font-weight: bold;
+         place-self: center;
+         transition: all .2s linear;
+       }
+     }
+
+     .wrapper-show:hover{
+       background-color: #000000;
+       transition: all .2s linear;
+       a{
+         color: #ffffff;
+         transition: all .2s linear;
+       }
+     }
+
+   }
+ }
+
+.item-image:hover .showDetail{
+  width: 100%;
+  transition: all .2s linear;
+  opacity: 1;
+}
+
+.detail{
+  text-align: center;
+  a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 44px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  p, label{
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+// end code common items here
+
+
+// main title
+.main-title{
+  width: 1750px;
+  height: 100px;
+  margin: 0 auto 50px auto;
+  display: block;
+  background: #f4f4f4 !important;
+  padding: 20px;
+  box-sizing: border-box;
+  h1{
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+// end main title
+
+// log form
+
+.log-title{
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.title-form{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  p{
+    color: #000000;
+  }
+  form{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    input{
+      width: 100%;
+      height: 30px;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid lightgrey;
+      outline: none;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    button{
+      width:65px;
+      height: 30px;
+      background: #ffffff;
+      border: 1px solid black;
+      color: black;
+      transition: .5s linear;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid lightgrey;
+      outline: none;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    button:hover{
+      transition: .5s linear;
+      background: #000000;
+      color: #ffffff;
+    }
+
+  }
+}
+
+// log form end
+
+
+.slide-banner {
+  width: 1750px;
+  height: 650px;
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  z-index: 0;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .slider-title{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0,.5);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    p{
+      color: #ffffff;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next{
+    right: 0%;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+}

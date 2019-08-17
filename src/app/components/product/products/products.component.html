@@ -1,0 +1,35 @@
+<div class="main-title">
+  <h1> Products </h1>
+  <p> Home / Products</p>
+</div>
+
+<div class="main-content">
+  <div class="product-action">
+    <p>Showing all result</p>
+    <form action="">
+      <select id="select-search-product">
+        <option value=""> Default</option>
+        <option value="asc" column="price"> Sort by price: Low to high</option>
+        <option value="desc" column="price"> Sort by price: High to low</option>
+      </select>
+    </form>
+  </div>
+  <div class="show-all-product">
+    <div class="items" *ngFor="let product of products">
+      <div class="item-image">
+        <img src="{{product.image}}" alt="">
+        <div class="showDetail">
+          <div class="wrapper-show"><a> <i
+            class="fa fa-cart-plus"></i> </a></div>
+          <div class="wrapper-show"><a routerLink="/products/{{product.id}}"> <i class="fa fa-eye"></i> </a></div>
+          <div class="wrapper-show"><a href="#"> <i
+            class="fa fa-heart"></i> </a></div>
+        </div>
+      </div>
+      <div class="detail">
+        <a href="#"> {{product.name}} </a> <br>
+        <label>{{product.price}} VND</label>
+      </div>
+    </div>
+  </div>
+</div>

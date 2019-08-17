@@ -1,0 +1,144 @@
+<div class="slide-banner">
+  <div class="slideItems">
+    <img src="http://localhost/fashion/public/images/slide/1561630684_19242.jpg" alt="">
+    <div class="slider-title">
+      <p>
+        Slide title
+      </p>
+    </div>
+    <div class="slider-desc">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="slideItems fade">
+    <img src="http://localhost/fashion/public/images/banner/1565096985__DSC1083.jpg" alt="">
+    <div class="slider-title">
+      <p>
+        Slide title 2
+      </p>
+    </div>
+    <div class="slider-desc">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+</div>
+
+
+<div class="title">
+  <h1> New products </h1>
+</div>
+
+<div id="showNew">
+
+  <div *ngFor="let product of productsFive; let i = index" class=" items-{{i}}">
+    <div class="items">
+      <div class="{{i == 1 ? 'big-show' : 'small-show'}} item-image">
+        <img src="{{product.image}}" alt="">
+        <div class="showDetail">
+          <div class="wrapper-show"><a> <i
+            class="fa fa-cart-plus"></i> </a></div>
+          <div class="wrapper-show"><a routerLink="/products/{{product.id}}"> <i class="fa fa-eye"></i> </a></div>
+          <div class="wrapper-show"><a href="#"> <i
+            class="fa fa-heart"></i> </a></div>
+        </div>
+      </div>
+      <div class="detail">
+        <a routerLink="/products/{{product.id}}"> {{product.name}} </a>
+        <br>
+        <label>{{product.price}} VND</label>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="slide-banner">
+  <div class="banner-product">
+    <img src="http://localhost/fashion/public/images/banner/1565096985__DSC1083.jpg" alt="">
+    <div class="slider-title">
+      <p>
+        Banner
+      </p>
+    </div>
+
+    <div class="slider-desc" style="width: 1200px;">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores blanditiis delectus eveniet
+        exercitationem fugit iste laboriosam laborum magnam magni qui, repudiandae tempora, voluptatibus?
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="title">
+  <h1> SUGGESTION FOR YOU </h1>
+</div>
+
+<div class="sug-rec">
+  <div class="items" *ngFor="let product of productsSix">
+    <div class="item-image">
+      <img src="{{product.image}}" alt="">
+      <div class="showDetail">
+        <div class="wrapper-show"><a> <i
+          class="fa fa-cart-plus"></i> </a></div>
+        <div class="wrapper-show"><a routerLink="/products/{{product.id}}"> <i class="fa fa-eye"></i> </a></div>
+        <div class="wrapper-show"><a href="#"> <i
+          class="fa fa-heart"></i> </a></div>
+      </div>
+    </div>
+    <div class="detail">
+      <a routerLink="/products/{{product.id}}"> {{product.name}} </a>
+      <br>
+      <label>{{product.price}} VND</label>
+    </div>
+  </div>
+</div>
+
+
+<div class="title">
+  <h1> recommend for you </h1>
+</div>
+
+<div class="sug-rec">
+  <div class="items" *ngFor="let product of productsSix">
+    <div class="item-image">
+      <img src="{{product.image}}" alt="">
+      <div class="showDetail">
+        <div class="wrapper-show"><a> <i
+          class="fa fa-cart-plus"></i> </a></div>
+        <div class="wrapper-show"><a routerLink="/products/{{product.id}}"> <i class="fa fa-eye"></i> </a></div>
+        <div class="wrapper-show"><a href="#"> <i
+          class="fa fa-heart"></i> </a></div>
+      </div>
+    </div>
+    <div class="detail">
+      <a routerLink="/products/{{product.id}}"> {{product.name}} </a>
+      <br>
+      <label>{{product.price}} VND</label>
+    </div>
+  </div>
+</div>
+
+

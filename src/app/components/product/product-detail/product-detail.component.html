@@ -1,0 +1,24 @@
+
+<div class="main-title">
+  <h1> Products </h1>
+  <p> Home / Products</p>
+</div>
+
+<div class="main-content">
+  <div class="main-detail" *ngIf="product != null">
+    <div class="detail-Img">
+      <img src="{{product.image}}"
+           alt="">
+    </div>
+    <div class="detail-infor">
+      <h2>{{product.name}}</h2>
+      <label>{{product.price}} VND</label>
+      <p [ngStyle]="{'margin-bottom': '0px'}">{{product.description}}</p>
+      <br>
+      <a href="">
+        <button class="btn-buy">Buy</button>
+      </a>
+
+    </div>
+  </div>
+</div>
